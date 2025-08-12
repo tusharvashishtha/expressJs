@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Brown Modern Page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #f8c8dc, #c79a6d);
+      color: #3e2c25;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin: 0;
+      color: #5a3e36;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5a3e36;
+      margin: 0 1rem;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #5a3e36;
+      transition: width 0.3s;
+      margin-top: 4px;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      padding: 3rem;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    main h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #5a3e36;
+    }
+
+    main p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #5a3e36;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pink & Brown Elegance</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to Elegance</h2>
+    <p>
+      Experience the perfect harmony between warmth and grace with our pink-brown inspired design. 
+      This modern classic color scheme creates an inviting atmosphere while maintaining timeless sophistication.
+    </p>
+    <p>
+      Whether you're creating a personal blog, a portfolio, or a small business site, this aesthetic offers 
+      a versatile foundation for your brand. The soft pink tones bring a touch of femininity, 
+      while the earthy brown grounds the composition in stability and tradition.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Pink Brown Elegance | Designed with ❤️
+  </footer>
+</body>
+</html>
