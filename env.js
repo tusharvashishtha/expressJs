@@ -43,18 +43,43 @@
 
 //middleware
 
-const express = require('express');
+// const express = require('express');
+// const app = express();
+// require('dotenv').config();
+
+// app.get('/', (req, res, next)=>{
+//     console.log("This is our home page");
+//     next(); 
+// })
+
+// app.get('/', (req, res) => {
+//     console.log("This is some more information");
+//     res.send("Middleware executed")
+// })
+
+// app.listen(process.env.PORT)
+
+const express = require("express");
 const app = express();
-require('dotenv').config();
+const PORT = 3000;
 
-app.get('/', (req, res, next)=>{
-    console.log("This is our home page");
-    next();
-})
+// Middleware function
+function logger(req, res, next) {
+  console.log(`${req.method} ${req.url} - ${new Date().toLocaleString()}`);
+  next(); // pass control to the next middleware/route
+}
 
-app.get('/', (req, res) => {
-    console.log("This is some more information");
-    res.send("Middleware executed")
-})
+// Use the middleware for all routes
+app.use(logger);
 
-app.listen(process.env.PORT)
+app.get("/", (req, res) => {
+  res.send("Home Page");
+});
+
+app.get("/about", (req, res) => {
+  res.send("About Page");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
