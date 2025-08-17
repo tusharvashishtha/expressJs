@@ -79,6 +79,9 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.send("About Page");
 });
+app.get("/contact", (req, res) => {
+  res.send("contact Page");
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
