@@ -82,6 +82,9 @@ app.get("/about", (req, res) => {
 app.get("/contact", (req, res) => {
   res.send("contact Page");
 });
+app.get("/work", (req, res) => {
+  res.send("work Page");
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
