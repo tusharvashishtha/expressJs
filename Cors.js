@@ -1,3 +1,2 @@
-// install the c o r s
+// install t he c o r s
 
- 
