@@ -15,4 +15,8 @@ app.get("/blog/:blogid", (req, res) => {
     res.send(req.params.blogid)  //that's how we access params
 })
 
+app.get("/query" , (req, res) => {
+    res.send(req.query);  //that's how we access query params
+})
+
 app.listen(process.env.PORT)
