@@ -7,11 +7,11 @@ require('dotenv').config();
 app.get("/", (req, res) => {
     res.send("Home page");
 })
-app.get("/about", (req, res) =>  {
+app.get("/about", (req, res) =>   {
     res.send("About page")
 })
 
-app.get("/blog/:blogid", (req, res) => {
+app.get("/blog/:blogid", ( req, res ) => {
     res.send(req.params.blogid)  //that's how we access params
 })
 
